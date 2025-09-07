@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Janala</title>
+    <!-- Daisy UI and Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/592a392546.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+     <link rel="shortcut icon" href="english-janala-resources/assets/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="navbar bg-base-100 shadow-sm px-5">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                    </div>
+                    <ul
+                        tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
+                        <li><a><i class="fa-solid fa-book-open"></i> Learn</a></li>
+                        <li><a><i class="fa-solid fa-right-from-bracket"></i> Log Out</a></li>
+                    </ul>
+                </div>
+                <a class="flex items-center text-xl gap-1">
+                    <span class="text-lg font-bold">English</span>
+                    <img src="english-janala-resources/assets/logo.png" alt="logo"/>
+                    <span class="font-bangla font-semibold text-lg">জানালা</span>
+                </a>
+            </div>
+            <div class="navbar-end hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 gap-3">
+                    <li><a class="btn btn-outline btn-primary"><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
+                    <li><a class="btn btn-outline btn-primary"><i class="fa-solid fa-book-open"></i> Learn</a></li>
+                    <li><a class="btn btn-outline btn-primary"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hero bg-base-200 min-h-screen">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <img
+                src="english-janala-resources/assets/hero-student.png"
+                />
+                <div>
+                    <h1 class="text-5xl font-bold"><span class="text-sky-400">English</span> is Easy!!</h1>
+                    <p class="py-6 font-bangla">
+                        আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ
+                    </p>
+                    <div class="flex flex-col gap-3 max-w-sm">
+                        <input type="text" placeholder="Enter your name" class="input" />
+                        <input type="password" placeholder="Enter your password" class="input" />
+                        <button class="btn btn-primary">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="mt-15">
+        <div class="vocabulary">
+            <h1 class="text-3xl text-center poppins-bold"><span class="text-sky-400">Let's</span> Learn Vocabulary</h1>
+            <div class="lessons flex flex-wrap justify-center items-center gap-5 mt-5">
+                <button class="btn btn-outline btn-primary" id="lesson-1"><i class="fa-solid fa-book-open"></i>Lesson-1</button>
+                <button class="btn btn-outline btn-primary" id="lesson-2"><i class="fa-solid fa-book-open"></i>Lesson-2</button>
+                <button class="btn btn-outline btn-primary" id="lesson-3"><i class="fa-solid fa-book-open"></i>Lesson-3</button>
+                <button class="btn btn-outline btn-primary" id="lesson-4"><i class="fa-solid fa-book-open"></i>Lesson-4</button>
+                <button class="btn btn-outline btn-primary" id="lesson-5"><i class="fa-solid fa-book-open"></i>Lesson-5</button>
+                <button class="btn btn-outline btn-primary" id="lesson-6"><i class="fa-solid fa-book-open"></i>Lesson-6</button>
+                <button class="btn btn-outline btn-primary" id="lesson-7"><i class="fa-solid fa-book-open"></i>Lesson-7</button>
+            </div>
+            <div class="temp bg-[#F8F8F8] flex flex-col justify-center items-center h-[200px] text-center m-10">
+                <p style="color: #79716B;">আপনি এখনো কোন Lesson Select করেন ন</p>
+                <h1 style="color: #292524">একটি Lesson Select করুন।</h1>
+            </div>
+            <div class="cards m-10 sm:grid sm:grid-cols-3 sm:grid-rows-3 items-center gap-5">
+            </div>
+        </div>
+        <div class="questions my-20 mx-10 flex flex-col gap-10">
+            <div class="text-3xl text-center">
+                <h1 class="poppins-bold"><span class="text-sky-400">Frequently</span> Asked Questions</h1>
+            </div>
+            <div class="questions-container">
+                <div tabindex="0" class="collapse collapse-plus bg-base-100 border-base-300 border">
+                    <div class="collapse-title font-semibold">How do I create an account?</div>
+                    <div class="collapse-content text-sm">
+                        Click the "Sign Up" button in the top right corner and follow the registration process.
+                    </div>
+                </div>
+                <div tabindex="0" class="collapse collapse-plus bg-base-100 border-base-300 border">
+                    <div class="collapse-title font-semibold">How do I create an account?</div>
+                    <div class="collapse-content text-sm">
+                        Click the "Sign Up" button in the top right corner and follow the registration process.
+                    </div>
+                </div>
+                <div tabindex="0" class="collapse collapse-plus bg-base-100 border-base-300 border">
+                    <div class="collapse-title font-semibold">How do I create an account?</div>
+                        <div class="collapse-content text-sm">
+                        Click the "Sign Up" button in the top right corner and follow the registration process.
+                    </div>
+                </div>
+                <div tabindex="0" class="collapse collapse-plus bg-base-100 border-base-300 border">
+                    <div class="collapse-title font-semibold">How do I create an account?</div>
+                    <div class="collapse-content text-sm">
+                        Click the "Sign Up" button in the top right corner and follow the registration process.
+                    </div>
+                </div>
+                <div tabindex="0" class="collapse collapse-plus bg-base-100 border-base-300 border">
+                    <div class="collapse-title font-semibold">How do I create an account?</div>
+                    <div class="collapse-content text-sm">
+                        Click the "Sign Up" button in the top right corner and follow the registration process.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <h3 class="text-lg font-bold" id="word">Hello!</h3>
+            <p class="py-4" id="meaning">Press ESC key or click the button below to close</p>
+            <p class="py-4" id="bangla">Press ESC key or click the button below to close</p>
+            <div class="modal-action">
+            <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+            </form>
+            </div>
+        </div>
+        </dialog>
+    </main>
+    <footer class="footer flex justify-between bg-white text-black p-10">
+        <a class="flex items-center text-xl gap-2">
+            <span class="text-lg font-bold">English</span>
+            <img src="english-janala-resources/assets/logo.png" alt="logo" class="w-8 h-8"/>
+            <span class="font-bangla font-semibold text-lg">জানালা</span>
+        </a>    
+        <nav>
+            <h6 class="footer-title text-black">Social</h6>
+            <div class="grid grid-flow-col gap-4">
+                <a href="#" class="hover:text-sky-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current text-black">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="hover:text-sky-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current text-black">
+                        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="hover:text-sky-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current text-black">
+                        <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                    </svg>
+                </a>
+            </div>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
